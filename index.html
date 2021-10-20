@@ -5,45 +5,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/dropdown.css">
   
   <title>Frontend Mentor | [Blogr]</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  Product
+  <header>
+    <section class="container__header">
+      <header class="container-upper__header">
+        <section class="little-container__imgs">
+          <img src="/images/logo.svg" alt="company logo" class="logo-img__header">
+          <button type="button" class="hamburguer-select hamburguer"></button>
+        </section>
+        <section id="container__btns" class="container__btns-hidden">
+          <nav class="container__nav" id="navbar">
+            <div class="dropdown__container dropdown-product__container">
+              <button class="dropdown dropdown-product">Product</button>
+              <div class=" dropdown-content-hidden dropdown-content dropdown-product-content">
+                <a href="#" class="dropdown-item dropdown-item-product">Overview</a>
+                <a href="#" class="dropdown-item dropdown-item-product">Pricing</a>
+                <a href="#" class="dropdown-item dropdown-item-product">Marketplace</a>
+                <a href="#" class="dropdown-item dropdown-item-product">Features</a>
+                <a href="#" class="dropdown-item dropdown-item-product">Integrations</a>
+              </div>
+            </div>
+            <div class="dropdown__container dropdown-company__container">
+              <button class=" dropdown dropdown-company">Company</button>
+              <div class="dropdown-content-hidden dropdown-content dropdown-company-content">
+                <a href="#" class="dropdown-item dropdown-item-company">About</a>
+                <a href="#" class="dropdown-item dropdown-item-company">Team</a>
+                <a href="#" class="dropdown-item dropdown-item-company">Blog</a>
+                <a href="#" class="dropdown-item dropdown-item-company">Careers</a>
+              </div>
+            </div>
+            <div class="dropdown__container dropdown-connect__container">
+              <button class=" dropdown dropdown-connect">Connect</button>
+              <div class="dropdown-content-hidden dropdown-content dropdown-connect-content">
+                <a href="#" class="dropdown-item dropdown-item-connect">Contact</a>
+                <a href="#" class="dropdown-item dropdown-item-connect">Newsletter</a>
+                <a href="#" class="dropdown-item dropdown-item-connect">LinkedIn</a>
+              </div>
+            </div>
+          </nav>
+          <div class="btns-login-signup__container">
+              <button class="btn-login btn__header">Login</button>
+              <button class="btn-signup btn__header">Sign Up</button>
+          </div>
+        </section>
+      </header>
+      <article class="container-lower__header">
+        <h1 class="header__title">A modern <br> publishing platform</h1>
+        <h3 class="header__subtitle">Grow your audience and build your <br> online brand</h3>
+        <div class="btn-lower-header">
+          <button class="btn-header btn-header-start">Start for Free</button>
+          <button class="btn-header btn-header-learn">Learn More</button>
+        </div>
+      </article>
+    </section>
+    
+  </header>
 
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-
-  Contact
-  Newsletter
-  LinkedIn
   
-  Login
-  Sign Up
+  
+  
+  
+  
 
-  A modern publishing platform
-  Grow your audience and build your online brand
+  
+  
 
-  Start for Free
-  Learn More
+  
+  
 
   Designed for the future
 
@@ -96,4 +137,5 @@
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+  <script src="js/script.js"></script>
 </html>

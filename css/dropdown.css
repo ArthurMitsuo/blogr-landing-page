@@ -1,0 +1,227 @@
+.container__btns {
+    width: 90%;
+    height: auto;
+    border-radius: 7px;
+    background-color: var(--color-white);
+    position: absolute;
+    top: 150px;
+    left: 30px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 50px;
+    transition: .7s;
+}
+.container__btns-hidden{
+    height: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    border-radius: 7px;
+    background-color: var(--color-white);
+    position: absolute;
+    top: -900px;
+    left: 30px;
+    transition: .5s;
+}
+
+.container__nav {
+    flex-direction: column;
+}
+
+.dropdown {
+    all: unset;
+    color: var(--color-blueish);
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.dropdown::after {
+    content: '';
+    background-image: url("/images/icon-arrow-dark.svg");
+    background-repeat: no-repeat;
+
+    position: absolute;
+    right: calc(10% - 60px);
+    transform: rotate(180deg);
+    top: -15px;
+    right:-20px;
+    width: 40px;
+    height: 30px;
+}
+
+.dropdown-content-hidden{
+    display:none;
+}
+.dropdown-content-show{
+    padding: 5px 0;
+    background-color: rgba(204, 204, 204, 0.397);
+    border-radius: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    height: auto;
+    margin: 15px auto;
+}
+.dropdown-content a{
+    margin: 7px 0;
+}
+
+.btns-login-signup__container{
+    margin: 0 auto;
+    border-top: 1px ridge #ccc;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.btn__header{
+    all: unset;
+    margin: 15px 0 ;
+    color: var(--color-blueish);
+    font-weight: bold;
+    margin: 0 auto;
+    height: 50px;
+    width: 30%;
+}
+.btn-signup{
+    background: linear-gradient(to right, var(--color-orangish) 0%, var(--color-redish) 100%);
+    color: var(--color-white);
+    border-radius: 25px;   
+}
+
+
+@media screen and (min-width: 1008px){
+    #container__btns{
+        align-items: center;
+        background-color: inherit;
+        border: none;
+        flex-direction: row;
+        justify-content:space-around;
+        padding:0;
+        position: initial;
+        width: 100%;
+    }
+    .little-container__imgs{
+        width: auto;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+    .container__nav{
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 100%;
+        width: 100%;
+    }
+    /*dropdown begins*/
+    .dropdown {
+        color: var(--color-white);
+        font-size: 1.3rem;
+        font-weight: 200;
+        position:relative;
+        width: 10vw;
+
+        text-align: left;
+        padding-bottom: 5px;
+    }
+    .dropdown::after {
+        content: '';
+        background-image: url("/images/icon-arrow-light.svg");
+        background-repeat: no-repeat;
+        transform: rotate(0deg);
+        position:absolute;
+        right: -25px;
+        top: 10px;
+    }
+    
+    .dropdown__container {
+        float: left;
+        overflow: hidden;
+    }
+    .dropdown__container:hover {
+        cursor: pointer;
+    }
+    .dropdown-content {
+        display:none;
+        position: absolute;
+        background-color: var(--color-white);
+        height: auto;
+        width: 150px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        border-radius: 5px;
+        z-index: 1;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        top:11vh;
+    }
+    .dropdown-item{
+        color: #000;
+        display:block;
+        float: none;
+        padding-left: 20px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        text-align: left;
+        text-decoration: none;
+    }
+    .dropdown-item:hover{
+        text-align: left;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .dropdown__container:hover .dropdown-content,
+    .dropdown-content:hover {
+        display: block; 
+    }
+    .dropdown__container:hover .dropdown::after {
+        content: '';
+        background-image: url("/images/icon-arrow-light.svg");
+        background-repeat: no-repeat;
+        transform: rotate(180deg);
+        position: absolute;
+        left: 6.8vw;
+        top: -13px;
+    }
+
+    .btns-login-signup__container{
+        border: none;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    .btn__header {
+        all: unset;
+        width: 100px; 
+        height: 40px;  
+        font-weight: bold;
+    }
+    .btn__header:hover{
+        cursor: pointer;
+    }
+    .btn-login{
+        margin-right: 10px;
+    }
+    .btn-login:hover{
+        color: var(--color-redish)
+    }
+    .btn-signup{
+        border-radius: 25px;
+        background-color: var(--color-white);
+        color: var(--color-redish);
+    }
+    .btn-signup:hover{
+        border-radius: 25px;
+        background-color: var(--color-orangish);
+        color: var(--color-white);
+    }
+}
