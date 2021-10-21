@@ -3,12 +3,16 @@
     --color-orangish: hsl(13, 100%, 72%);
     --color-redish: hsl(353, 100%, 62%);
     --color-blueish: hsl(208, 49%, 24%);
+    --color-grayish-blue: hsl(207, 13%, 34%);
+    --color-dark-black-blue: hsl(240, 10%, 16%);
+    --color-very-dark-blue: hsl(237, 17%, 21%);
 
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
     font-size: 16px;
+    box-sizing: border-box;
 
     font-family: Overpass, Ubuntu, sans-serif;
 

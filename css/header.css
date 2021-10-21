@@ -1,5 +1,5 @@
-header{
-    background: linear-gradient(to right, var(--color-orangish) 0%,  var(--color-redish) 100%);
+.header{
+    background: linear-gradient(var(--color-orangish) 0%,  var(--color-redish) 100%);
     height: 70vh;
     width: 100%;
     border-radius: 0 0 0 100px;
@@ -17,6 +17,8 @@ header{
     
     height: 99.8%;
     width: 99.9%;
+    max-width: 1440px;
+    margin: 0 auto;
     
     position:relative;
 
@@ -119,7 +121,7 @@ header{
 .btn-header-start{
     align-items: center;
     background-color: var(--color-white);
-    color: hsl(353, 100%, 62%);
+    color: var(--color-redish);
 }
 .btn-header-start:hover{
     background-color: var(--color-orangish);
@@ -129,10 +131,12 @@ header{
 }
 
 @media screen and (min-width: 1008px){
-    header{
-        height: 60%;
+    .header{
+        height: 80%;
+        background: linear-gradient(to right, var(--color-orangish) 0%, var(--color-redish) 100%);
     }
     .container__header{
+        height: 100%;
         background-size: 200%;
         background-position:left;
         background-position-x: -400px;
@@ -153,7 +157,7 @@ header{
         display: none;
     }
     .header__title{
-        font-size: 4rem;
+        font-size: 3rem;
     } 
     .header__subtitle{
         font-size: 1.7rem;
