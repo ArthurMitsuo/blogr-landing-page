@@ -3,6 +3,8 @@
     width:100%;
     margin: 0 auto;
     padding-top: 10vh;
+
+    overflow: hidden;
 }
 .img{
     width: 100%;
@@ -38,14 +40,15 @@
 .container-mid__main{
     display:flex;
     position:relative;
-    height: 90vh;
+    height: 50vh;
     align-items: flex-end;
 }
 .state-container{
     background-color: var(--color-very-dark-blue);
     border-radius: 0 100px 0 100px;
     font-weight: 200;
-    height: 70%;
+    height: 65%;
+    width:100%;
     color: var(--color-white);
     padding-top: 65%;
 
@@ -53,14 +56,14 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: -200px;
-    background-position-x: -40px;
+    background-position-x: -110px;
 }
 .state-container h4{
     color: var(--color-white);
 }
 .img-phones{
     position: absolute;
-    top:10px;
+    top: 7.5%;
 }
 .img-upper__main-desktop {
     display: none;
@@ -89,16 +92,27 @@
         font-size: 1.5rem;
     }
     
-     
     .container-mid__main{
-        height: 150vh;
+        margin-top: 70px;
+        height: 70vh;
     }
     .state-container{
-        height: 100vh;
+        height: 70%;
         padding-top: 55%;
+        align-items: baseline;
+        margin-bottom:0;
+        background-position-y: -400px;
+    }
+
+    .img-phones{
+        top: -2%;
+    }
+    .container-state-text{
+        padding-top: 50px;
     }
    
 }
+
 @media screen and (min-width:1008px){
     .container__main{
         overflow: hidden;
@@ -145,10 +159,10 @@
     }
     .img-upper__main-desktop {
         display: initial;
-        width: 70%;
+        width: 80%;
         position: absolute;
-        right: -20%;
-        top: -180px;
+        right: -26%;
+        top: -100px;
     }
 
     .container-mid__main {
@@ -165,17 +179,17 @@
 
         background-size: 90%;
         background-position-x: -300px;
-        background-position-y: -700px;
+        background-position-y: -500px;
     }
     .small-text-container{
         float: right;
         padding-left: 40px;
     }
     .img-phones{
-        height: 700px;
+        height: 600px;
         width: auto;
         top:-40px;
-        left: 3%;
+        left: 0;
     }
     .container-state-text{
         width: 50%;
@@ -184,8 +198,10 @@
         text-align:left;
         position:absolute;
         right: 0;
-        bottom: 0;
+        top:0;
         padding-left: 40px;
+        padding-right: 20px;
+        padding-top: 120px;
     }
     .container-state-text h4{
         font-size: 2.5rem;
@@ -198,10 +214,10 @@
     }
     .img-laptop-desktop {
         display: initial;
-        width: 1000px;
+        width: 800px;
         height: auto;
         position: absolute;
-        left: -280px;
+        left: -220px;
     }
     .bottom-texts-container{
         height: 88%;
@@ -220,4 +236,46 @@
         margin-left: 0;
     }
     
+}
+@media screen and (min-width: 1300px) {
+    .img-upper__main-desktop {
+        display: initial;
+        width: 70%;
+        position: absolute;
+        right: -20%;
+        top: -180px;
+    }
+    .img-phones {
+        height: 700px;
+        width: auto;
+        top: -40px;
+        left: 3%;
+    }
+    .state-container {
+        width: 100%;
+        height: 90%;
+        margin: auto;
+        padding: 0;
+
+        background-size: 90%;
+        background-position-x: -300px;
+        background-position-y: -700px;
+    }
+    .container-state-text {
+        width: 50%;
+        height: 70%;
+
+        text-align: left;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding-left: 40px;
+    }
+    .img-laptop-desktop {
+        display: initial;
+        width: 1000px;
+        height: auto;
+        position: absolute;
+        left: -280px;
+    }
 }
