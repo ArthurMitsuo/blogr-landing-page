@@ -1,11 +1,13 @@
 *{
     --color-white: hsl(0, 0%, 100%);
+    --color-desturated-white: hsla(0, 0%, 100%, 0.623);
     --color-orangish: hsl(13, 100%, 72%);
     --color-redish: hsl(353, 100%, 62%);
     --color-blueish: hsl(208, 49%, 24%);
     --color-grayish-blue: hsl(207, 13%, 34%);
     --color-dark-black-blue: hsl(240, 10%, 16%);
-    --color-very-dark-blue: hsl(237, 17%, 21%);
+    --color-very-dark-gray-blue: hsl(237, 17%, 21%);
+    --color-very-dark-desaturated-blue: hsl(237, 23%, 32%);
 
     margin: 0;
     padding: 0;

@@ -104,13 +104,15 @@
         <div class="img-container-phones">
           <img src="/images/illustration-phones.svg" alt="" class="img img-phones">
         </div>
-        <header class="state-container small-text-container">
-          <section class="container-state-text">
-            <h4 class="title">State of the Art Infrastructure</h4>
-            <p class="small-text text"> With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-        This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
-          </section>
-        </header>
+        <div class="state-container-container">
+          <header class="state-container small-text-container">
+            <section class="container-state-text">
+              <h4 class="title">State of the Art Infrastructure</h4>
+              <p class="small-text text"> With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+          This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+            </section>
+          </header>
+        </div>
       </section>
       <section class="container-lower__main">
         <div class="img img-laptop">
@@ -137,30 +139,36 @@
   </main>
   <footer>
     <section class="container__footer">
-      <div class="img">
+      <div class="img-footer">
         <img src="/images/logo.svg" alt="">
       </div>
-      <label for="">Product</label>
-      <ul>
-        <li>Overview</li>
-        <li>Pricing</li>
-        <li>Marketplace</li>
-        <li>Features</li>
-        <li>Integrations</li>
+      <div class="product-container footer-container-list">
+        <label class="list-title" for="product-footer">Product</label>
+        <ul class="list-footer" id="product-footer">
+          <li class="list-item-footer"><a href="#" class="list-link-footer"> Overview</a></li>
+          <li class="list-item-footer"><a href="#" class="list-link-footer">Pricing</a></li>
+          <li class="list-item-footer"><a href="#" class="list-link-footer">Marketplace</a></li>
+          <li class="list-item-footer"><a href="#" class="list-link-footer">Features</a></li>
+          <li class="list-item-footer"><a href="#" class="list-link-footer">Integrations</a></li>
+        </ul>
+      </div>
+      <div class="company-container footer-container-list">
+        <label class="list-title" for="company-footer">Company</label>
+      <ul class="list-footer" id="company-footer">
+        <li class="list-item-footer"><a href="#" class="list-link-footer">About</a></li>
+        <li class="list-item-footer"><a href="#" class="list-link-footer">Team</a></li>
+        <li class="list-item-footer"><a href="#" class="list-link-footer">Blog</a></li>
+        <li class="list-item-footer"><a href="#" class="list-link-footer">Careers</a></li>
       </ul>
-      <label for="">Company</label>
-      <ul>
-        <li>About</li>
-        <li>Team</li>
-        <li>Blog</li>
-        <li>Careers</li>
-      </ul>
-      <label for="">Connect</label>
-      <ul>
-        <li>Contact</li>
-        <li>Newsletter</li>
-        <li>LinkedIn</li>
-      </ul>
+      </div>
+      <div class="connect-container footer-container-list">
+        <label class="list-title" for="connect-footer">Connect</label>
+        <ul class="list-footer" id="connect-footer">
+          <li class="list-item-footer"><a href="#" class="list-link-footer">Contact</a></li>
+          <li class="list-item-footer"><a href="#" class="list-link-footer">Newsletter</a></li>
+          <li class="list-item-footer"><a href="#" class="list-link-footer">LinkedIn</a></li>
+        </ul>
+      </div>
     </section>
   </footer>
 

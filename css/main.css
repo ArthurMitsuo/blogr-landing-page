@@ -43,11 +43,15 @@
     height: 50vh;
     align-items: flex-end;
 }
-.state-container{
-    background-color: var(--color-very-dark-blue);
+.state-container-container{
+    background: linear-gradient(var(--color-very-dark-gray-blue) 0%, var(--color-very-dark-desaturated-blue) 100%);
     border-radius: 0 100px 0 100px;
-    font-weight: 200;
     height: 65%;
+    width:100%;
+}
+.state-container{
+    font-weight: 200;
+    height: 100%;
     width:100%;
     color: var(--color-white);
     padding-top: 65%;
@@ -61,6 +65,7 @@
 .state-container h4{
     color: var(--color-white);
 }
+
 .img-phones{
     position: absolute;
     top: 7.5%;
@@ -101,14 +106,14 @@
         padding-top: 55%;
         align-items: baseline;
         margin-bottom:0;
-        background-position-y: -400px;
+        background-position-y: -300px;
     }
 
     .img-phones{
-        top: -2%;
+        top: 0;
     }
     .container-state-text{
-        padding-top: 50px;
+        padding-top: 0;
     }
    
 }
@@ -122,6 +127,9 @@
     }
     .img-laptop-mobile {
         display: none;
+    }
+    .small-text-container{
+        padding-left: 40px;
     }
     .text{
         width: 95%;
@@ -171,9 +179,13 @@
         margin: 100px 0;
         float: none;
     }
+    .state-container-container{
+        height: 70%;
+        background: linear-gradient(to right, var(--color-very-dark-gray-blue) 0%, var(--color-very-dark-desaturated-blue) 100%);
+    }
     .state-container{
         width: 100%;
-        height: 90%;
+        height: 100%;
         margin: auto;
         padding: 0;  
 
@@ -181,10 +193,7 @@
         background-position-x: -300px;
         background-position-y: -500px;
     }
-    .small-text-container{
-        float: right;
-        padding-left: 40px;
-    }
+
     .img-phones{
         height: 600px;
         width: auto;
@@ -198,10 +207,11 @@
         text-align:left;
         position:absolute;
         right: 0;
-        top:0;
+        bottom:0;
         padding-left: 40px;
         padding-right: 20px;
-        padding-top: 120px;
+        padding-top: 30px;
+        padding-bottom: 40px;
     }
     .container-state-text h4{
         font-size: 2.5rem;
@@ -270,6 +280,7 @@
         right: 0;
         bottom: 0;
         padding-left: 40px;
+        padding-top: 70px;
     }
     .img-laptop-desktop {
         display: initial;
